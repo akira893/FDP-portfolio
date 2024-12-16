@@ -7,11 +7,10 @@
   <title>Akira's portfolio</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 
 <style>
-    *{
+*{
     box-sizing: border-box;
     margin:0%;
     padding:0%;}
@@ -21,24 +20,46 @@ body {
      background-color: #0f0f0f; 
      color: white; }
 
-.main-navbar .navbar.navbar {
-    background-color: #0f0f0f;}
+.main-navbar {
+    background-color: #f13c60;
+    border-radius: 40px;
+    max-width: 90%;
+    margin: 10px auto;
+    padding: 5px 0;
+  }
+
+.main-navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #f9f5e8;
+    padding: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
   
 .main-navbar .navbar-brand img {
-      height: 50px;
-      padding: 5px;}
-  
-.main-navbar .nav-link {color: #fcc600;
-      font-family: 'Courier New', Courier, monospace;
-      transition: color 0.3s;}
-  
-.main-navbar .nav-link:hover {color: #f95555;
-    transform: scale(1.2);}
+      height: 40px;
+      padding: 2px;
+      object-fit: contain;
+    }
 
-.main-navbar .nav-link.active {color: #f95555; }
+
+.main-navbar .nav-link {color: #fdf5db;
+      font-family: 'Courier New', Courier, monospace;
+      transition: color 0.3s, transform 0.3s;}
+  
+.main-navbar .nav-link:hover {color: #fcc600;
+    transform: scale(1.1);}
+
+.main-navbar .nav-link.active {color: #fcc600; }
 .navbar-toggler-icon {
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(252, 198, 0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");}
   
+ @media (max-width: 768px) {
+        .main-navbar {
+            max-width: 95%; 
+            margin: auto; 
+        }}
+        
 section#home {
     display: flex;
     flex-direction: column; 
@@ -99,6 +120,10 @@ h4{
     font-size: 2rem;
     color: #fdf5db;} 
 
+.tab-content p {
+  font-size: .75rem;
+}
+
 section#about {
     display: flex;
     flex-direction: column; 
@@ -109,12 +134,12 @@ section#about {
     text-align: center;}
 
 #about .about-subheading{
-    color: #fcc600;
+    color: #f13c60;
     font-size: 1.5rem;}
 
 
 #about .nav-pills .nav-link {
-    color: #fcc600;
+    color: #fcf5de;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 50px;
     padding: 10px 20px;
@@ -127,7 +152,7 @@ section#about {
 }
 
 #about .nav-pills .nav-link.active {
-    color: #f95555;
+    color:#fcc600;
     background-color: #0f0f0f;
     transform: scale(1.2)
 }
@@ -202,6 +227,8 @@ form .btn-primary:hover {
   background-color:#f2b704;
 }
 
+
+
 </style>
 </head>
 
@@ -209,7 +236,7 @@ form .btn-primary:hover {
 
 <nav class="navbar navbar-expand-md fixed-top main-navbar">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/Untitled-1.svg" alt="Logo"></a>
+        <a class="navbar-brand" href="#"><img src="img/Untitled-1.svg" alt="Logo">  akira </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -240,7 +267,7 @@ form .btn-primary:hover {
       <div class="row align-items-center">
         <div class="col-md-6">
           <h1 class="about-heading">About Me</h1>
-          <p class="about-subheading">Creative Design enthusiast, Student; </p>
+          <p class="about-subheading"> Designer, illustrator; </p>
           <p>
             I’m a designer with an interest in exploring new techniques and approaches, particularly in illustration—and I’m always eager to learn and grow. My experiences, like volunteering at an animal shelter, have strengthened my sense of empathy and collaboration, qualities I bring into every project. As someone who enjoys problem-solving and working steadily with a team, I aim to create meaningful designs while continuously evolving in my craft.
           </p>
@@ -355,7 +382,6 @@ form .btn-primary:hover {
       </form>
     </div>
  </section>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
